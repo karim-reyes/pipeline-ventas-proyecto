@@ -14,9 +14,9 @@
     "sender_email": "Python DataOps <pydataops@example.com>"
   },
   "paths": {
-    "csv_dir": "/app/data",
+    "csv_dir": "/data",
     "csv":  "ComisionEmpleados_V1_202510.csv",
-    "xls_dir": "/app/output",
+    "xls_dir": "/output",
     "excel": "ComisionesCalculadas.xlsx"
   },
   "report": {
