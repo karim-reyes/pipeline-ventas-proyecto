@@ -19,7 +19,7 @@ pipeline {
       steps {
         sh '''
           docker run --rm \
-            -v $WORKSPACE/config.json:/app/config.json:ro \
+            -v $WORKSPACE/app/config.json:/app/config.json:ro \
             -v $WORKSPACE/data:/app/data:ro \
             $IMAGE
         '''
