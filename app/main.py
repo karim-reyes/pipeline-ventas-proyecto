@@ -10,6 +10,7 @@ Flujo:
 5.  Calcula la comisión de cada fila
 6.  Añade la columna «periodo» y exporta a Excel
 7.  Envía el Excel por e-mail
+# Agrego un comentario para probar
 """
 
 from datetime import date            # Para obtener el mes actual
