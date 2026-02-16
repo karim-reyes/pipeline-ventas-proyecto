@@ -11,6 +11,7 @@ Flujo:
 6.  Añade la columna «periodo» y exporta a Excel
 7.  Envía el Excel por e-mail
 # Agrego un comentario para probar
+# Agrego un comentario 2 para probar el github webhook
 """
 
 from datetime import date            # Para obtener el mes actual
