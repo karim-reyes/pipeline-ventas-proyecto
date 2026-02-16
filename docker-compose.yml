@@ -4,4 +4,7 @@ services:
       context: .
     volumes:
       - ./app:/app
+      - ./app/config.json:/app/config.json:ro
+      - ./data:/app/data:ro      # monta la carpeta data
+      # - ./output:/app/output:rw      # monta la carpeta data
     container_name: dataops_app

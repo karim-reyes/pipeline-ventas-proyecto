@@ -68,7 +68,7 @@ def main() -> None:
     periodo = date.today().strftime("%Y%m")
     csv_dir = Path(PATHS.get("csv_dir", "."))             # carpeta de CSV
     csv_file = csv_dir / f"ComisionEmpleados_V1_{periodo}.csv"
-    print(f"> Archivo csv: {csv_file}")
+    print(f"Archivo csv: {csv_file}")	
 
     # 3.2  Si no hay CSV para el mes, abortar sin error
     if not csv_file.exists():
@@ -103,10 +103,11 @@ def main() -> None:
     )
    
     # 3.8  Guardar resultado en Excel
-
-    xls_dir = Path(PATHS.get("xls_dir", "."))		
-    excel_out = xls_dir / Path(PATHS["excel"])
-    print(f"> Archivo xls: {excel_out}")
+    # xls_dir = Path(PATHS.get("xls_dir", ".")) 
+    # excel_out = xls_dir / Path(PATHS["excel"])
+    
+    excel_out = Path(PATHS["excel"])
+    print(f"Archivo xls: {excel_out}")	
     merged.to_excel(excel_out, index=False, engine="openpyxl")
 
     # 3.9  Enviar el Excel por correo

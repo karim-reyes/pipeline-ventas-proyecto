@@ -20,7 +20,7 @@ pipeline {
         sh '''
           docker run --rm \
             -v $WORKSPACE/app/config.json:/app/config.json:ro \
-            -v $WORKSPACE/data:/app/data:ro \
+            -v $WORKSPACE/data:/app/app/data:ro \
             $IMAGE
         '''
       }
